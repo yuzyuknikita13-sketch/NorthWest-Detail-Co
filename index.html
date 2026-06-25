@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NorthWest Detail Co</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+
+  <header>
+    <h1 class="logo">NorthWest Detail Co</h1>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#book">Book</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-text">
+      <h2>Premium Car Detailing</h2>
+      <p>Shine. Protect. Impress.</p>
+      <button onclick="scrollToBook()">Book Now</button>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <h2>Services</h2>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Basic Wash</h3>
+        <p>$49 Exterior Clean</p>
+      </div>
+
+      <div class="card">
+        <h3>Full Detail</h3>
+        <p>$149 Interior + Exterior</p>
+      </div>
+
+      <div class="card">
+        <h3>Premium Package</h3>
+        <p>$239 Clay Bar + Deep Clean</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery">
+    <h2>Gallery</h2>
+
+    <div class="gallery">
+      
+      <!-- IMAGE TEMPLATE 1 -->
+      <div class="img-box">
+        <img src="image1.jpg" alt="Detailing Work 1"/>
+        <p>Before / After Finish</p>
+      </div>
+
+      <!-- IMAGE TEMPLATE 2 -->
+      <div class="img-box">
+        <img src="image2.jpg" alt="Detailing Work 2"/>
+        <p>Interior Deep Clean</p>
+      </div>
+
+      <!-- IMAGE TEMPLATE 3 -->
+      <div class="img-box">
+        <img src="image3.jpg" alt="Detailing Work 3"/>
+        <p>Exterior Shine</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- BOOKING -->
+  <section id="book">
+    <h2>Book an Appointment</h2>
+
+    <form onsubmit="submitForm(event)">
+      <input type="text" placeholder="Name" required />
+      <input type="text" placeholder="Car Model" required />
+      <input type="date" required />
+      <textarea placeholder="Notes (pet hair, stains, etc.)"></textarea>
+      <button type="submit">Submit</button>
+    </form>
+
+    <p id="confirmation"></p>
+  </section>
+
+  <footer>
+    <p>© 2026 NorthWest Detail Co</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
